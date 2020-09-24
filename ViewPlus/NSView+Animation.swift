@@ -8,6 +8,7 @@
 import Cocoa
 
 public extension NSView {
+    @available(OSX 10.12, *)
     func animateLayout(changes: (NSAnimationContext) -> Void) {
         layoutSubtreeIfNeeded()
 
