@@ -7,7 +7,7 @@
 
 import AppKit
 
-public class UnrestrictedLayerView: NSView {
+open class UnrestrictedLayerView: NSView {
     public var unrestrictedLayer: CALayer? {
         didSet {
             oldValue?.removeFromSuperlayer()
@@ -24,13 +24,13 @@ public class UnrestrictedLayerView: NSView {
         }
     }
 
-    override init(frame frameRect: NSRect) {
+    public override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
 
         postInitSetup()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
 
         postInitSetup()
@@ -40,7 +40,7 @@ public class UnrestrictedLayerView: NSView {
         wantsLayer = true
     }
 
-    public override func layout() {
+    open override func layout() {
         super.layout()
 
         guard
