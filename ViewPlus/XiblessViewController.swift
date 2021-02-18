@@ -7,7 +7,7 @@
 
 import Cocoa
 
-public class XiblessViewController<View: NSView>: NSViewController {
+open class XiblessViewController<View: NSView>: NSViewController {
     public init() {
         super.init(nibName: nil, bundle: nil)
     }
