@@ -60,7 +60,7 @@ func offset(by: Float) -> NSLayoutConstraint.Priority
 
 **UnrestrictedLayerView**
 
-By default, the `layer` property of an `NSView` has a number of restrictions. There are many properties that are owned and conrolled by the AppKit, and are impossible to modify in a safe and predictable way. This class provides a single property `unrestrictedLayer`, which has no restrictions whatsoever.
+By default, the `layer` property of an `NSView` has a number of restrictions. There are many properties that are owned and controlled by the AppKit, and are impossible to modify in a safe and predictable way. This class provides a single property `unrestrictedLayer`, which has no restrictions whatsoever.
 
 This layer will just match the frame of the hosting view. This is is a great way to integrate a layer into the Auto Layout system. It's also nice for applying transforms.
 
