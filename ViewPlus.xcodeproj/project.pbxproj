@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C987269D251CD74200ED6E10 /* ViewPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9872693251CD74200ED6E10 /* ViewPlus.framework */; };
-		C98726A2251CD74200ED6E10 /* ViewPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726A1251CD74200ED6E10 /* ViewPlusTests.swift */; };
 		C98726A4251CD74200ED6E10 /* ViewPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = C9872696251CD74200ED6E10 /* ViewPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98726B0251CD85A00ED6E10 /* NSView+TrackingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726AF251CD85A00ED6E10 /* NSView+TrackingArea.swift */; };
 		C98726B4251CD8C100ED6E10 /* NSView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726B3251CD8C100ED6E10 /* NSView+AutoLayout.swift */; };
 		C98726B8251CD91700ED6E10 /* NSView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726B7251CD91700ED6E10 /* NSView+Animation.swift */; };
 		C98726BC251CDA6A00ED6E10 /* UnrestrictedLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726BB251CDA6A00ED6E10 /* UnrestrictedLayerView.swift */; };
 		C98726C9251CDF2100ED6E10 /* NSLayoutConstraint+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98726C8251CDF2100ED6E10 /* NSLayoutConstraint+Priority.swift */; };
+		C98C5FEA25DEB9C100466408 /* XiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C5FE925DEB9C100466408 /* XiblessViewController.swift */; };
+		C98C5FEC25DEC4D400466408 /* XiblessViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C5FEB25DEC4D400466408 /* XiblessViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		C9872696251CD74200ED6E10 /* ViewPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPlus.h; sourceTree = "<group>"; };
 		C9872697251CD74200ED6E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C987269C251CD74200ED6E10 /* ViewPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98726A1251CD74200ED6E10 /* ViewPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPlusTests.swift; sourceTree = "<group>"; };
 		C98726A3251CD74200ED6E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98726AF251CD85A00ED6E10 /* NSView+TrackingArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+TrackingArea.swift"; sourceTree = "<group>"; };
 		C98726B3251CD8C100ED6E10 /* NSView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		C98726BB251CDA6A00ED6E10 /* UnrestrictedLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrestrictedLayerView.swift; sourceTree = "<group>"; };
 		C98726C1251CDB2300ED6E10 /* ViewPlus.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ViewPlus.xcconfig; sourceTree = "<group>"; };
 		C98726C8251CDF2100ED6E10 /* NSLayoutConstraint+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Priority.swift"; sourceTree = "<group>"; };
+		C98C5FE925DEB9C100466408 /* XiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiblessViewController.swift; sourceTree = "<group>"; };
+		C98C5FEB25DEC4D400466408 /* XiblessViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiblessViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				C98726BB251CDA6A00ED6E10 /* UnrestrictedLayerView.swift */,
 				C98726C1251CDB2300ED6E10 /* ViewPlus.xcconfig */,
 				C98726C8251CDF2100ED6E10 /* NSLayoutConstraint+Priority.swift */,
+				C98C5FE925DEB9C100466408 /* XiblessViewController.swift */,
 			);
 			path = ViewPlus;
 			sourceTree = "<group>";
@@ -97,8 +100,8 @@
 		C98726A0251CD74200ED6E10 /* ViewPlusTests */ = {
 			isa = PBXGroup;
 			children = (
-				C98726A1251CD74200ED6E10 /* ViewPlusTests.swift */,
 				C98726A3251CD74200ED6E10 /* Info.plist */,
+				C98C5FEB25DEC4D400466408 /* XiblessViewControllerTests.swift */,
 			);
 			path = ViewPlusTests;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98726BC251CDA6A00ED6E10 /* UnrestrictedLayerView.swift in Sources */,
+				C98C5FEA25DEB9C100466408 /* XiblessViewController.swift in Sources */,
 				C98726B4251CD8C100ED6E10 /* NSView+AutoLayout.swift in Sources */,
 				C98726B0251CD85A00ED6E10 /* NSView+TrackingArea.swift in Sources */,
 				C98726C9251CDF2100ED6E10 /* NSLayoutConstraint+Priority.swift in Sources */,
@@ -224,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C98726A2251CD74200ED6E10 /* ViewPlusTests.swift in Sources */,
+				C98C5FEC25DEC4D400466408 /* XiblessViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
