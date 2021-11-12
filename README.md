@@ -64,6 +64,10 @@ By default, the `layer` property of an `NSView` has a number of restrictions. Th
 
 This layer will just match the frame of the hosting view. This is is a great way to integrate a layer into the Auto Layout system. It's also nice for applying transforms.
 
+**NoSelfHitTestingView**
+
+A really simple view that will never become first responder due to a mouse down event. This is handy for routing clicks down into other parts of the view hierarchy.
+
 **XiblessViewController**
 
 This is a very simple NSViewController subclass that eliminates some boilerplate for view controllers that always create their views programatically. This class is based on work on a blog post about [view controllers without XIBs](https://padraig.org/appkit/2020/10/25/layout-in-code.html), and includes a lot of great discussion about the pros and cons of such an approach.
