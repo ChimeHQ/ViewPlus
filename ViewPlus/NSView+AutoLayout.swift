@@ -8,6 +8,7 @@
 import Cocoa
 
 public extension NSView {
+    /// shorthand for `translatesAutoresizingMaskIntoConstraints`
     var useAutoLayout: Bool {
         get {
             return translatesAutoresizingMaskIntoConstraints == false
@@ -17,6 +18,10 @@ public extension NSView {
         }
     }
 
+    /// shorthand for setting translatesAutoresizingMaskIntoConstraints on subviews
+    ///
+    /// This method will return false if *any* subview has `translatesAutoresizingMaskIntoConstraints`
+    /// set to true.
     var subviewsUseAutoLayout: Bool {
         get {
             return subviews.reduce(into: true, { (result, subview) in

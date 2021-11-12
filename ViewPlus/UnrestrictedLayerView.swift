@@ -7,6 +7,7 @@
 
 import AppKit
 
+/// An NSView with a layer you can maniulate without any restrictions
 open class UnrestrictedLayerView: NSView {
     public var unrestrictedLayer: CALayer? {
         didSet {
