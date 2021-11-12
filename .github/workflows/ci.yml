@@ -16,5 +16,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: swift test
         run: swift test
-	  - name: carthage
-	  	run: carthage build --no-skip-current
+      - name: carthage
+        run: carthage build --no-skip-current
